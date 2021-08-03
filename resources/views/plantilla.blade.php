@@ -33,6 +33,15 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <!-- DataTables -->
+  <link rel="stylesheet" href="http://localhost/clinicacovid/public/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
+  <link rel="stylesheet" href="http://localhost/clinicacovid/public/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
+
+
+
+
+
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -91,5 +100,16 @@
 <script src="http://localhost/clinicacovid/public/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="http://localhost/clinicacovid/public/dist/js/demo.js"></script>
+
+<!-- DataTables -->
+<script src="http://localhost/clinicacovid/public/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+
+<script src="http://localhost/clinicacovid/public/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
+
+<script src="http://localhost/clinicacovid/public/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+
+
+
 </body>
 </html>

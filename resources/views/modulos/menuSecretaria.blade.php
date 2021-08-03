@@ -16,7 +16,7 @@
             </li>
 
             <li>
-                <a href="{{url('DialogCovid')}}">
+                <a href="{{url('Doctores')}}">    <!-- DialogCovid    -->
                     <i class="fa fa-user-md"> </i>
                     <span> Doctores </span>
                 </a>
@@ -26,6 +26,13 @@
                 <a href="{{url('Inicio')}}">
                     <i class="fa fa-users"> </i>
                     <span> Pacientes </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{{url('DialogCovid')}}">
+                    <i class="fa fa-users"> </i>
+                    <span> ChatCovid </span>
                 </a>
             </li>
 

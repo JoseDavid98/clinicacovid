@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Consultorios;
 use App\Models\Doctores;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 
 class DoctoresController extends Controller
 {
@@ -22,7 +25,9 @@ class DoctoresController extends Controller
             return redirect('modulos.Inicio');
         }else
         {
-     return view('modulos.Doctores');
+            $consultorios = Consultorios::all();
+            $doctores = Doctores::all();
+     return view('modulos.Doctores', compact('consultorios','doctores'));
         }
     }
 
@@ -44,7 +49,28 @@ class DoctoresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    $datos = request()->validate([
+
+        'name' => ['required'],
+        'sexo' => ['required'],
+        'id_consultorio' => ['required'],
+        'password' => ['required','string','min:3'],
+        'email' => ['required','string','email','unique:users']
+
+    ]);
+    Doctores::create([
+
+        'name'=>$datos['name'],
+        'id_consultorio'=>$datos['id_consultorio'],
+        'email'=>$datos['email'],
+        'sexo'=>$datos['sexo'],
+        'documento'=>'',
+        'telefono'=>'',
+        'rol'=>'Doctor',
+        'password'=>Hash::make($datos['password'])
+    ]);
+
+    return redirect('Doctores');
     }
 
     /**

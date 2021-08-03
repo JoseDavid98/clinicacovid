@@ -42,7 +42,8 @@ Route::get('DialogCovid',[DialogCovidController::class,'index']);
 Route::put('Consultorio/{id}',[ConsultoriosController::class,'update']);
 Route::delete('borrar-Consultorio/{id}',[ConsultoriosController::class,'destroy']);
 
-Route::get('Doctores',[DoctoresController::class,'index']);
+Route::get('Doctores',[DoctoresController::class,'index']); 
+Route::post('Doctores',[DoctoresController::class,'store']);
 
 
 

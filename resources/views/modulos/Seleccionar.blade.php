@@ -6,7 +6,7 @@
 
 <section class="content">
     <center>
-        <h1> NECESITA INICIAR SESION PARA INGRESAR AL SISTEMA </h1>
+        <h1> BIENVENIDOS A LA "CLINICA SAN LORENZO" </h1>
     </center>
 
         <div class="row">
